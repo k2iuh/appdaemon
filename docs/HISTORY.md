@@ -24,6 +24,7 @@
 
 - Remove outdated references to `app_init_delay`
 - Reworked how the `pin_app` and `pin_thread` settings work their way through the internals, and added corresponding tests.
+- The HASS plugin refreshes the service list once Home Assistant has started, so services registered during startup, such as `weather/get_forecasts`, work right away.
 
 **Breaking Changes**
 
